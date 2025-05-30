@@ -1,5 +1,4 @@
 #include <iostream>
-#include "FileName.h"
 
 using namespace std;
 // InsertionSort Algorithm Implementation in C++
@@ -8,7 +7,7 @@ void insertion_sort(int arr[], int size) { //ikinci elemandan itibaren soldan ko
   for(int i = 1; i < size; i++){
       int key = arr[i];
 	  int j = i - 1;
-      while (j >= 0 && key < arr[j]) {
+      while (j >= 0 && key > arr[j]) {
 		  arr[j + 1] = arr[j];
           j--;
       }
@@ -24,6 +23,8 @@ void print(int array[], int size) {
 }
 int main(){
     int array[] = { 12, 45, 23, 67, 34 };
+	// Print the original array
+	cout << "Original array: " << endl;
     for (int element : array) {
         cout << element << " ";
     }
@@ -33,4 +34,4 @@ int main(){
    print(array, size);
    return 0;
 }
-//Update this insertion sort coding...
+//Update this code...
