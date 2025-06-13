@@ -7,3 +7,5 @@ In this repo I share algorithm and data structure exercises that I solved with C
 -[Insertion Sort](sorting/insertion_sort.cpp)
 
 -[Merge Sort](sorting/merge_sort.cpp)
+
+-[Doubly Linked_List](list/doubly_linked_list.cpp)
